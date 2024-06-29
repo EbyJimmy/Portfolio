@@ -684,6 +684,13 @@ img {
   border-color: #d93025;
 }
 
+.button{
+  border-color: var(--first-color);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+
 .error__text{
   font-size: var(--smaller-font-size);
   color: #d93025;
