@@ -24,7 +24,7 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link">
+                            <a href="#home" class="nav__link active-link">
                                 <i class="uil uil-estate nav__icon"></i> Home
                             </a>
                         </li>
@@ -69,10 +69,10 @@
                 <div class="home__container container grid">
                     <div class="home__content grid">
                         <div class="home__social">
-                           <a href="https://www.linkedin.com/" target= "_blank" class="home__social-icon">
+                           <a href="https://www.linkedin.com/in/eby-jimmy-6975b7104/" target= "_blank" class="home__social-icon">
                             <i class="uil uil-linkedin-alt"></i>
                            </a> 
-                           <a href="https://github.com/" target= "_blank" class="home__social-icon">
+                           <a href="https://github.com/EbyJimmy" target= "_blank" class="home__social-icon">
                             <i class="uil uil-github-alt"></i>
                            </a>
                         </div>
@@ -89,7 +89,7 @@
                                     165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    <image class="home__blob-img" x="12" y="18" xlink:href="assets/img/perfil.png"/>
+                                    <image class="home__blob-img" x="12" y="18" xlink:href="assets/img/profile.png"/>
                                 </g>
                             </svg>                            
                         </div>
@@ -120,7 +120,7 @@
                 <span class="section__subtitle">My introduction</span>
 
                 <div class="about__container container grid">
-                    <img src="assets/img/about.jpg" alt="" class="about__img">
+                    <img src="assets/img/eby.jpg" alt="" class="about__img">
 
                     <div class="about__data">
                         <p class="about__description">Web developer, with extensive knowledge and years of experience, working in web technologies and Ui / Ux design, delivering quality work.</p>
@@ -136,7 +136,7 @@
                             </div>
                         </div>
                         <div class="about__buttons">
-                            <a download="" href="assets/pdf/Alexa-Cv.pdf" class="button button--flex">
+                            <a download="" href="assets/pdf/Eby-Cv.pdf" class="button button--flex">
                                 Download CV<i class="uil uil-download-alt button__icon"></i>
                             </a>
                         </div>
@@ -457,31 +457,35 @@
                         </div>
                     </div>
 
-                    <form action="" class="contact__form grid">
+                    <form action="#" class="contact__form grid">
                         <div class="contact__inputs grid">
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input">
+                            <div class="contact__content field">
+                                <label class="contact__label">Name</label>
+                                <input type="text" placeholder="Full Name" autocomplete="off" id="name" class="contact__input">
+                                <div class="error__text">Full name can't be blank</div>
                             </div>
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
+                            <div class="contact__content field">
+                                <label class="contact__label">Email</label>
+                                <input type="email" placeholder="Email id" autocomplete="off" id="email" class="contact__input">
+                                <div class="error__text email">Email id can't be blank</div>
                             </div>
                         </div>
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Subject</label>
-                            <input type="text" class="contact__input">
+                        <div class="contact__content field">
+                            <label class="contact__label">Subject</label>
+                            <input type="text" placeholder="Subject" autocomplete="off" id="subject" class="contact__input">
+                            <div class="error__text">Subject can't be blank</div>
                         </div>
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        <div class="contact__content field">
+                            <label class="contact__label">Message</label>
+                            <textarea name="" id="message" cols="0" rows="7" placeholder="Your message" autocomplete="off" class="contact__input"></textarea>
+                            <div class="error__text">Message can't be blank</div>
                         </div>
 
                         <div>
-                            <a href="#" class="button button--flex">
+                            <button type="submit" class="button button--flex">
                                 Send Message
                                 <i class="uil uil-message button__icon"></i>
-                            </a>
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -510,15 +514,15 @@
                     </ul>
 
                     <div class="footer__socials">
-                        <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                        <a href="https://www.facebook.com/ebyjimmy1995/" target="_blank" class="footer__social">
                             <i class="uil uil-facebook-f"></i>
                         </a>
 
-                        <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                        <a href="https://www.instagram.com/ebyjimmy/" target="_blank" class="footer__social">
                             <i class="uil uil-instagram"></i>
                         </a>
 
-                        <a href="https://twitter.com/" target="_blank" class="footer__social">
+                        <a href="https://x.com/JpEby95" target="_blank" class="footer__social">
                             <i class="uil uil-twitter-alt"></i>
                         </a>
                     </div>
@@ -537,6 +541,8 @@
         <script src=""></script>
 
         <!--==================== MAIN JS ====================-->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="assets/js/main.js"></script>
     </body>
 </html>

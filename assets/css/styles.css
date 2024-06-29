@@ -265,10 +265,10 @@ img {
   bottom: 0%;
 }
 
-/* Active link 
+/* Active link */
 .active-link{
   color: var(--first-color);
-}*/
+}
 
 /* Change background header */
 .scroll-header{
@@ -310,7 +310,7 @@ img {
 }
 
 .home__blob-img{
-  width: 170px;  
+  width: 250px;
 }
 
 
@@ -349,6 +349,7 @@ img {
 
 .home__scroll-mouse{
   font-size: 2rem;
+  color: var(--first-color);
 }
 
 .home__scroll-name{
@@ -360,6 +361,7 @@ img {
 
 .home__scroll-arrow{
   font-size: 1.25rem;
+  color: var(--first-color);
 }
 
 
@@ -678,7 +680,21 @@ img {
   padding: .25rem .5rem .5rem 0;
 }
 
+.contact__input {
+  border-color: #d93025;
+}
 
+.error__text{
+  font-size: var(--smaller-font-size);
+  color: #d93025;
+  text-align: left;
+  margin: -5px 0 10px;
+  display: none;
+}
+
+.error .error__text{
+  display: block;
+}
 
 /*==================== FOOTER ====================*/
 .footer{
@@ -842,6 +858,10 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+  .nav__container{
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   body{
     margin: 0;
@@ -862,7 +882,7 @@ img {
   .header,
   .main,
   .footer__container{
-    padding: 0 1rem;
+    padding: 1rem 1rem;
   }
 
   .nav{
@@ -951,10 +971,29 @@ img {
   .header,
   .main,
   .footer__container{
-    padding: 0;
+    padding: 24px;
   }
 
-  .nav__con
+  .nav,
+  .footer__container{
+    max-width: 1640px;
+    font-size: 1.25rem;
+  }
+
+  .nav__link{
+    font-size: 1rem;
+  }
+
+  .footer__links{
+    justify-content: center;
+  }
+
+
+  .section{
+    padding-block: 9rem 4rem;
+  }
+
+
 
   .home__blob{
     width: 320px;
@@ -966,7 +1005,52 @@ img {
   .contact__form{
     width: 460px;
   }
-  .contact__input{
+  .contact__inputs{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1920px){
+  .header,
+  .main,
+  .footer__container{
+    padding: 32px;
+  }
+
+  .nav,
+  .footer__container{
+    max-width: 1920px;
+    font-size: 1.5rem;
+  }
+
+  .nav__link{
+    font-size: 1.5rem;
+  }
+
+  .footer__links{
+    justify-content: center;
+  }
+
+
+  .section{
+    padding-block: 9rem 4rem;
+  }
+
+  .home__content{
+    width: 920px;    
+  }
+
+  .home__blob{
+    width: 420px;
+  }
+  .home__social{
+    transform: translateX(-3rem);
+  }
+
+  .contact__form{
+    width: 480px;
+  }
+  .contact__inputs{
     grid-template-columns: repeat(2, 1fr);
   }
 }
